@@ -6,7 +6,7 @@ const io = require('socket.io')(http)
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html')
 })
-app.use(express.static(__dirname + '/assets'))
+app.use(express.static(__dirname + '/public'))
 
 io.on('connection', (socket) => {
     socket.on('chat message', (data) => {
