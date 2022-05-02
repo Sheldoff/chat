@@ -15,7 +15,7 @@ form.addEventListener('submit', (e) => {
             message: input.value, 
             name: userName
         })
-        input.value = ''
+        input.value = '' 
     }
 })
 
